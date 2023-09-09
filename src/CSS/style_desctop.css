@@ -27,7 +27,7 @@
 }
 
 body {
-    font-family: --var-font-family;
+    font-family: var(--var-font-family);
     font-size: 16px;
     line-height: 1.2;
 }
@@ -894,6 +894,10 @@ body {
 }
 
 /* ==========TUTORIAL============ */
+
+.tutorial-guarantee {
+    display: none;
+}
 
 .tutorial__header {
     font-family: var(--var-font-family);

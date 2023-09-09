@@ -307,13 +307,165 @@
     }
 
     .tutorial-return__image {
+        width: 250px;
         display: block;
         position: relative;
         top: -50px;
         margin: 0 auto;
     }
 
-    .footer {
+    .tutorial-guarantee {
+        display: block;
+    }
+
+    .tutorial-guarantee__btn {
+        width: 100%;
+    }
+
+    .tutorial-guarantee__link {
+        display: block;
+        text-decoration: none;
+    }
+
+    .tutorial-guarantee__link--margin-top {
+        margin-top: 30px;
+    }
+
+    .tutorial-guarantee__btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border: none;
+        border-radius: 12px;
+        background-color: #0C1111;
+        font-family: var(--var-font-family);
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+
+    .tutorial-guarantee__btn--padding {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .tutorial-guarantee__btn--hover:hover {
+        background-color: #BDBDBD;
+    }
+
+    .tutorial-guarantee__arrow {
+        font-size: 25px;
+    }
+
+    .tutorial__items--margin {
+        margin-bottom: 100px;
+    }
+
+    .tutorial-guarantee__arrow--margin-left {
+        margin-left: 20px;
+    }
+
+    .tutorial__header-question {
+        display: none;
+    }
+
+    /* =======FOOTER=========== */
+
+    .footer--color {
+        background-color: white;
+    }
+
+    .container__footer-mobile {
+        margin: 0;
+    }
+
+    .info--padding-top {
+        padding-top: 0;
+    }
+
+    .info {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "info-download";
+    }
+
+    .info-download {
+        background-color: #333333;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    }
+
+    .info-download--padding {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .info-download__header {
+        font-family: var(--var-font-family);
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    .info-download__header--margin-top {
+        margin-top: 20px;
+    }
+
+    .info-download__box--margin-top {
+        margin-top: 40px;
+    }
+
+    .info-download__market {
+        grid-template-areas: "apple google";
+        gap: 15px;
+        justify-content: space-between;
+    }
+
+    .info-download__QR-code {
+        display: none;
+    }
+
+    .info-download__link {
+        width: calc(100% - 20px);
+        display: flex;
+        flex-direction: row;
+        background-color: #000000;
+    }
+
+    .info-download__link--padding {
+        padding: 20px 10px;
+    }
+    
+
+    .info-contacts__social {
+        display: none;
+    }
+
+    .info-download__other-social {
+        display: none;
+    }
+
+    .info-form {
+        display: none;
+    }
+
+    .copyrights {
+        display: none;
+    }
+
+    .info-about-as {
+        display: none;
+    }
+
+    .info-help {
+        display: none;
+    }
+
+    .info-contacts {
         display: none;
     }
 
