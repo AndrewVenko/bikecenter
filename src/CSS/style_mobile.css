@@ -262,9 +262,10 @@
         display: none;
     }
 
-    .tutorial__header--margin-top {
-        margin-top: 50px;
+    .tutorial-order--margin-bottom {
+        margin-bottom: 100px;
     }
+
 
     .tutorial-return {
         background: linear-gradient(to top, #E2E6EB, #F3F1F5);
@@ -276,11 +277,7 @@
 
     .tutorial-return--padding {
         padding-left: 10px;
-        padding-bottom: 20px;
-    }
-
-    .tutorial-order--margin-bottom {
-        margin-bottom: 100px;
+        padding-right: 10px;
     }
 
     .tutorial-return__header {
@@ -307,11 +304,18 @@
     }
 
     .tutorial-return__image {
-        width: 250px;
+        width: 300px;
         display: block;
         position: relative;
         top: -50px;
-        margin: 0 auto;
+    }
+
+    .tutorial__items--padding-bottom {
+        padding-bottom: 30px;
+    }
+
+    .tutorial__items--margin {
+        margin-bottom: 50px;
     }
 
     .tutorial-guarantee {
@@ -360,11 +364,6 @@
     .tutorial-guarantee__arrow {
         font-size: 25px;
     }
-
-    .tutorial__items--margin {
-        margin-bottom: 100px;
-    }
-
     .tutorial-guarantee__arrow--margin-left {
         margin-left: 20px;
     }
@@ -376,7 +375,7 @@
     /* =======FOOTER=========== */
 
     .footer--color {
-        background-color: white;
+        background-color: #0C1111;
     }
 
     .container__footer-mobile {
@@ -389,7 +388,7 @@
 
     .info {
         grid-template-columns: repeat(1, 1fr);
-        grid-template-areas: "info-download";
+        grid-template-areas: "info-download" "info-contacts" "info-help";
     }
 
     .info-download {
@@ -401,6 +400,7 @@
     .info-download--padding {
         padding-left: 20px;
         padding-right: 20px;
+        padding-bottom: 20px;
     }
 
     .info-download__header {
@@ -421,8 +421,8 @@
 
     .info-download__market {
         grid-template-areas: "apple google";
-        gap: 15px;
         justify-content: space-between;
+        grid-template-rows: repeat(1, 1fr);
     }
 
     .info-download__QR-code {
@@ -439,12 +439,192 @@
     .info-download__link--padding {
         padding: 20px 10px;
     }
-    
 
-    .info-contacts__social {
+    .info-contacts {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #000000;
+    }
+
+    .info-contacts--padding {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .info-contacts__social-link {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .info-contacts__social-link-mobile--padding-bottom {
+       padding-bottom: 20px;
+    }
+
+    .info-contacts__social-link-mobile--line-bottom {
+        border-bottom: 1px solid #333333;
+    }
+
+    .info-contacts__image {
+        height: 20px;
+    }
+
+    .info-contacts__text {
+        display: flex;
+        position: absolute;
+        left: 40px;
+    }
+
+    .info-contacts__symbol-mobile {
+        display: flex;
+    }
+
+    .info__header {
         display: none;
     }
 
+    .info__item {
+        display: none;
+    }
+
+    .address__item {
+        display: none;
+    }
+
+    .address__text {
+        display: block;
+        font-family: var(--var-font-family);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: #FFFFFF;
+    }
+
+    .address__header {
+        display: none;
+    }
+
+    .address__item-mobile {
+        display: block;
+    }
+
+    .address__text--margin-top {
+        margin-top: 10px;
+    }
+
+    .address--margin-mobile {
+        margin-top: 20px;
+    }
+    
+    .info-contacts__social {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info__items-mobile {
+        display: block;
+    }
+
+    .info__items-mobile--margin-top {
+        margin-top: 20px;
+    }
+
+    .info__item-mobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #EB5757;
+        border: none;
+        border-radius: 12px;
+    }
+
+    .info__item-mobile--padding {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .info-help__mobile {
+        display: block;
+    }
+
+    .info-help__mobile--padding {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .info__header-mobile {
+       display: block;
+    }
+
+    .info__header-mobile--margin-top {
+        margin-top: 20px;
+    }
+
+    .info-help__mobile-block--margin-top {
+        margin-top: 10px;
+    }
+
+    .info-help__mobile-link {
+        font-family: var(--var-font-family);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: #F2F2F2;
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .info-help__mobile-text {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+
+    .info-help__mobile-before-ruble::before {
+        background-image: url(../images/icon/icon-ruble.png);
+    }
+
+    .info-help__mobile-before-arrow::before {
+        background-image: url(../images/icon/icon-arrow.png);
+    }
+
+    .info-help__mobile-before-home::before {
+        background-image: url(../images/icon/icon-home.png);
+    }
+
+    .info-help__mobile-before-star::before {
+        background-image: url(../images/icon/icon-star.png);
+    }
+
+    .info-help__mobile-text::before {
+        content: ' ';
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .info__mobile-line {
+        display: block;
+        border: 1px solid #333333;
+    }
+
+    .info__mobile-line--margin {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
     .info-download__other-social {
         display: none;
     }
@@ -461,12 +641,6 @@
         display: none;
     }
 
-    .info-help {
-        display: none;
-    }
-
-    .info-contacts {
-        display: none;
-    }
+    
 
 }

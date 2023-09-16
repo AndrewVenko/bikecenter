@@ -1,3 +1,11 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -897,6 +905,7 @@ body {
 
 .tutorial-guarantee {
     display: none;
+    box-sizing: border-box;
 }
 
 .tutorial__header {
@@ -1032,6 +1041,14 @@ body {
     grid-area: info-help;
 }
 
+.info-help__mobile {
+    display: none;
+}
+
+.info__mobile-line {
+    display: none;
+}
+
 .info-about-as {
     grid-area: info-about-as;
 }
@@ -1104,6 +1121,10 @@ body {
     display: block;
 }
 
+.info-contacts__symbol-mobile {
+    display: none;
+}
+
 .address__header {
     font-family: var(--var-font-family);
     font-size: 18px;
@@ -1122,6 +1143,14 @@ body {
     list-style-type: none;
 }
 
+.address__item-mobile {
+    display: none;
+}
+
+.address__text {
+    display: none;
+}
+
 .address__item-link {
     font-family: var(--var-font-family);
     font-size: 16px;
@@ -1130,6 +1159,10 @@ body {
     text-align: left;
     color: #FFFFFF;
     text-decoration: none;
+}
+
+.address__item-link--hover:hover {
+    text-decoration: underline;
 }
 
 .info-download {
