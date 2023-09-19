@@ -388,7 +388,7 @@
 
     .info {
         grid-template-columns: repeat(1, 1fr);
-        grid-template-areas: "info-download" "info-contacts" "info-help";
+        grid-template-areas: "info-download" "info-contacts" "info-help" "info__mobile-line" "info-about-as" "info-form";
     }
 
     .info-download {
@@ -588,6 +588,10 @@
         
     }
 
+    .info-help__mobile-text--hover:hover {
+        text-decoration: underline;
+    }
+
     .info-help__mobile-before-ruble::before {
         background-image: url(../images/icon/icon-ruble.png);
     }
@@ -618,29 +622,105 @@
     .info__mobile-line {
         display: block;
         border: 1px solid #333333;
+        grid-area: info__mobile-line;
     }
 
     .info__mobile-line--margin {
         margin-top: 30px;
-        margin-bottom: 30px;
+    }
+
+    .info-about-as--mobile-padding {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .info-about-as__items-mobile {
+        display: block;
+        list-style-type: none;
+    }
+
+    .info-about-as__item-mobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .info-about-as__link-mobile {
+        font-family: var(--var-font-family);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #FFFFFF;
+    }
+
+    .info-about-as__link-mobile {
+        text-decoration: none;
+    }
+
+    .info-about-as__link-mobile--hover:hover {
+        text-decoration: underline;
+    }
+
+    .info-about-as__mobile-symbol {
+        color: #FFFFFF;
     }
     
     .info-download__other-social {
         display: none;
     }
 
-    .info-form {
-        display: none;
+    .info-form--mobile-padding {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
-    .copyrights {
-        display: none;
+    .info-form__header {
+        font-family: var(--var-font-family);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #BDBDBD;
     }
 
-    .info-about-as {
-        display: none;
+    .info-form__header-mobile--margin {
+        margin-top: 20px;
     }
 
-    
+    .info-form__form {
+        background-color: #0C1111;
+        border: 1px solid #4F4F4F;
+    }
+
+    .info-form__form--margin {
+        margin-top: 10px;
+        margin-right: 0px;
+    }
+
+    .info-form__input {
+        background-color: #0C1111;
+    }
+
+    .info-form__btn {
+        font-size: 22px;
+        background-color: #828282;
+        width: 100px;
+        color: #000000;
+    }
+
+    .copyrights__line {
+        border: 1px solid #333333;
+    }
+
+    .copyrights__line--margin {
+        margin-top: 20PX;
+    }
+
+    .copyrights__text {
+        color: #F2F2F2;
+    }
 
 }

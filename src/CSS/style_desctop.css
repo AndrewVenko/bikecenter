@@ -1067,6 +1067,10 @@ body {
     list-style: none;
 }
 
+.info-about-as__items-mobile {
+    display: none;
+}
+
 .info-about-as__items--padding-top {
     padding-top: 20px;
 }
