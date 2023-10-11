@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Help-page</title>
+    <link rel="shortcut icon" href="src/images/bonys-system/lightning.png" type="image/png">
     <link rel="stylesheet" href="src/CSS/style_desctop.css">
     <link rel="stylesheet" href="src/CSS/style_mobile.css"> 
 </head>
@@ -96,7 +97,7 @@
                                 <input class="search__input" type="text" placeholder="Поиск на сайте" required>
                             </label>
                             <button class="search__btn" type="submit">
-                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="search__btn-svg" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path class="search__btn-path" d="M7.99996 14.9999C11.8659 14.9999 14.9999 11.8659 14.9999 7.99996C14.9999 4.13399 11.8659 1 7.99996 1C4.13399 1 1 4.13399 1 7.99996C1 11.8659 4.13399 14.9999 7.99996 14.9999Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                     <path class="search__btn-path" d="M12.9492 12.95L16.9992 17" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
@@ -230,6 +231,7 @@
                 </div>
             </div>
         </div>
+        <hr class="heder-line heder-line--margin-top">
     </header>
     <main class="main">
         <div class="container">
@@ -245,7 +247,7 @@
                 </a>
             </div>
             <div class="help">
-                <h1 class="main__header-navigation main__header-navigation--margin-bottom main__header-navigation--margin-top">
+                <h1 class="main__header-navigation main__header-navigation--margin-bottom">
                     Помощь
                 </h1>
                 <div class="help__phone-hot-line help__phone-hot-line--margin-bottom ">
@@ -281,7 +283,7 @@
                         <li class="payment__item payment__item--margin-top">
                             <a class="payment__link payment__link--hover" href="#">
                                 Как оплатить заказ
-                                <svg class="payment__link-svg" width="7" height="10" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="payment__link-svg-mobile" width="7" height="10" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1 11L6 6L1 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </a>     
@@ -289,7 +291,7 @@
                         <li class="payment__item payment__item--margin-top">
                             <a class="payment__link payment__link--hover" href="#">
                                 Наложенный платёж
-                                <svg class="payment__link-svg" width="7" height="10" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="payment__link-svg-mobile" width="7" height="10" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1 11L6 6L1 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </a>
@@ -297,7 +299,7 @@
                         <li class="payment__item payment__item--margin-top">
                             <a class="payment__link payment__link--hover" href="#">
                                 Оплата электронными деньгами
-                                <svg class="payment__link-svg" width="7" height="10" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="payment__link-svg-mobile" width="7" height="10" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1 11L6 6L1 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </a>
@@ -305,7 +307,7 @@
                         <li class="payment__item payment__item--margin-top">
                             <a class="payment__link payment__link--hover" href="#">
                                 Как оплатить если нет карты
-                                <svg class="payment__link-svg" width="7" height="10" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="payment__link-svg-mobile" width="7" height="10" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1 11L6 6L1 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </a>
@@ -313,7 +315,7 @@
                         <li class="payment__item payment__item--margin-top">
                             <a class="payment__link payment__link--hover" href="#">
                                 Подарочные карты
-                                <svg class="payment__link-svg" width="7" height="10" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="payment__link-svg-mobile" width="7" height="10" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1 11L6 6L1 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </a>
@@ -357,7 +359,7 @@
                     <a class="guarantee__link" href="#">
                         <button class="guarantee__btn guarantee__btn--padding guarantee__btn--hover">
                             <p>Гарантийные талоны</p>
-                            <span class="guarantee__sumbol guarantee__sumbol---margin-left">
+                            <span class="guarantee__sumbol guarantee__sumbol--margin-left">
                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1 9L17 9" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
                                     <path d="M9 1L17 9L9 17" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
@@ -471,7 +473,7 @@
                         <button class="tutorial-guarantee__btn tutorial-guarantee__btn--padding tutorial-guarantee__btn--hover">
                             Гарантийные талоны
                             <span class="tutorial-guarantee__arrow tutorial-guarantee__arrow--margin-left">
-                                &rarr;
+                                &#129122;
                             </span>
                         </button>
                     </a>
