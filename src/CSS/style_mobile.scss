@@ -156,7 +156,7 @@ $linear-gradient-serves-block: linear-gradient(to right, #E2E6EB, #F3F1F5);
 
     .chat {
         height: 120px;
-        background-color: $white-color-text;
+        background: $white-color-text;
         
         &--margin-top {
             margin-bottom: 100px;
@@ -189,7 +189,10 @@ $linear-gradient-serves-block: linear-gradient(to right, #E2E6EB, #F3F1F5);
         position: relative;
 
         &--padding {
-            padding: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+            padding-bottom: 30px;
         }
 
         &__header {
@@ -226,7 +229,10 @@ $linear-gradient-serves-block: linear-gradient(to right, #E2E6EB, #F3F1F5);
     .bonys-system {
 
         &--padding {
-            padding: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+            padding-bottom: 30px;
         }
 
         &__images {
@@ -235,7 +241,7 @@ $linear-gradient-serves-block: linear-gradient(to right, #E2E6EB, #F3F1F5);
     }
 
     .payment {
-        background-color: $white-color-text;
+        background: $white-color-text;
         width: 100%;
 
         &--padding {
@@ -392,7 +398,9 @@ $linear-gradient-serves-block: linear-gradient(to right, #E2E6EB, #F3F1F5);
     /* =======FOOTER=========== */
 
     .footer--color {
-        background-color: $black-color-text;
+        background: $black-color-text;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
     }
 
     .container__footer-mobile {
@@ -409,7 +417,7 @@ $linear-gradient-serves-block: linear-gradient(to right, #E2E6EB, #F3F1F5);
     }
 
     .info-download {
-        background-color: $background-btn-gray;
+        background: $background-btn-gray;
         border-top-left-radius: 12px;
         border-top-right-radius: 12px;
 
@@ -741,12 +749,23 @@ $linear-gradient-serves-block: linear-gradient(to right, #E2E6EB, #F3F1F5);
             border: 1px solid $background-btn-gray;
 
             &--margin {
-                margin-top: 20PX;
+                margin-top: 20px;
             }
         }
 
         &__text {
+           display: none;
+        }
+
+        &__text-mobile {
+            display: block;
+            width: 100%;
+            font-family: $top-font;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
             color: $background-btn-hover;
+            text-align: start;
         }
     }
 }

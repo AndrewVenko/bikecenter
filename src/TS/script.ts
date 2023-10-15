@@ -13,8 +13,6 @@ const textBtn = setInterval(() => {
         document.querySelector('.info-form__input').placeholder = 'Введите свой e-mail';
 
         document.querySelector('.info-form__btn').value = '\u{1F862}';
-
-        document.querySelector('.copyrights__text-mobile').textContent = `Интернет-магазин "Байк Центр" ® bike-сentre.ru`;
         
     } else {
         document.querySelector('.delivery__btn').textContent = 'Расчитать доставку';
@@ -31,6 +29,15 @@ const textBtn = setInterval(() => {
 
         document.querySelector('.info-form__btn').value = 'Подписаться';
 
-        document.querySelector('.copyrights__text-mobile').textContent = `Сеть магазинов "Байк Центр" ® — bike-сentre.ru`;
     };
 }, 1);
+
+const btnCatalog = document.querySelector('.search__catalog-button');
+const catalogBox = document.querySelector('.menu-catalog');
+btnCatalog.addEventListener('click', () => {
+    if(catalogBox.classList.contains('menu-catalog--visibility')) {
+        catalogBox.classList.remove('menu-catalog--visibility');
+    } else {
+        catalogBox.classList.add('menu-catalog--visibility');
+    }
+})

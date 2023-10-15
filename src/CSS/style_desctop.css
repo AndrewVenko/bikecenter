@@ -173,6 +173,10 @@ body {
 .search__catalog-button--padding {
   padding: 5px 25px;
 }
+.search__catalog-button--hover:hover {
+  background: #BDBDBD;
+  cursor: pointer;
+}
 .search__catalog-link {
   text-decoration: none;
   display: flex;
@@ -353,6 +357,204 @@ body {
 }
 
 /* ============MAIN=========== */
+/* ============MENU-CATALOG=========== */
+.menu-catalog {
+  display: grid;
+  height: 1067px;
+  grid-template-areas: "categories links images";
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  position: absolute;
+  z-index: 2;
+  background: #FFFFFF;
+}
+.menu-catalog--visibility {
+  display: none;
+}
+.menu-catalog__categories {
+  grid-area: categories;
+  width: 270px;
+  height: 1067px;
+  border-right: 1px solid #E0E0E0;
+  padding-right: 20px;
+}
+.menu-catalog__box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #F2F3F5;
+  cursor: pointer;
+}
+.menu-catalog__box--margin-top {
+  padding-top: 10px;
+}
+.menu-catalog__box--margin-bottom {
+  padding-bottom: 10px;
+}
+.menu-catalog__box-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.menu-catalog__box-image {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 12px;
+  background: #F2F3F5;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 25px;
+}
+.menu-catalog__box-image--margin-right {
+  margin-right: 10px;
+}
+.menu-catalog__box-image-bicycle {
+  background-image: url(../images/menu-icon/bicycles.png);
+}
+.menu-catalog__box-image-electric_scooters {
+  background-image: url(../images/menu-icon/electric_scooters.png);
+}
+.menu-catalog__box-image-scooters {
+  background-image: url(../images/menu-icon/scooters.png);
+}
+.menu-catalog__box-image-skateboards {
+  background-image: url(../images/menu-icon/skateboards.png);
+}
+.menu-catalog__box-image-skates {
+  background-image: url(../images/menu-icon/skates.png);
+}
+.menu-catalog__box-image-bicycle_accessories {
+  background-image: url(../images/menu-icon/bicycle_accessories.png);
+}
+.menu-catalog__box-image-SUP {
+  background-image: url(../images/menu-icon/SUP.png);
+}
+.menu-catalog__box-image-tourism {
+  background-image: url(../images/menu-icon/tourism.png);
+}
+.menu-catalog__box-image-exercise_equipment {
+  background-image: url(../images/menu-icon/exercise_equipment.png);
+}
+.menu-catalog__box-image-scooter_parts {
+  background-image: url(../images/menu-icon/scooter_parts.png);
+}
+.menu-catalog__box-image-spare_parts_electric_scooters {
+  background-image: url(../images/menu-icon/spare_parts_electric_scooters.png);
+}
+.menu-catalog__box-image-skiing {
+  background-image: url(../images/menu-icon/skiing.png);
+}
+.menu-catalog__box-image-snowboards {
+  background-image: url(../images/menu-icon/snowboards.png);
+}
+.menu-catalog__box-image-backpacks_and_bags {
+  background-image: url(../images/menu-icon/backpacks_and_bags.png);
+}
+.menu-catalog__box-image-other {
+  background-image: url(../images/menu-icon/other.png);
+}
+.menu-catalog__box-text {
+  font-family: "Open-Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #333333;
+}
+.menu-catalog__box-text-bold {
+  font-family: "Open-Sans";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+  color: #0C1111;
+}
+.menu-catalog__links {
+  grid-area: links;
+  padding-left: 20px;
+  display: grid;
+  grid-template-areas: "left-part center-part right-part";
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 25px;
+}
+.menu-catalog__links-header {
+  font-family: "Open-Sans";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+  color: #0C1111;
+}
+.menu-catalog__links-box {
+  width: 52px;
+  height: 40px;
+  background: #F2F3F5;
+  border: none;
+  border-radius: 10px;
+}
+.menu-catalog__left-part {
+  grid-area: left-part;
+  width: 290px;
+}
+.menu-catalog__center-part {
+  grid-area: center-part;
+  width: 290px;
+}
+.menu-catalog__right-part {
+  grid-area: right-part;
+  width: 290px;
+}
+.menu-catalog__container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.menu-catalog__container-head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #F2F3F5;
+}
+.menu-catalog__container-head--padding-bottom {
+  padding-bottom: 3px;
+}
+.menu-catalog__items {
+  list-style-type: none;
+}
+.menu-catalog__item--margin-top {
+  margin-top: 10px;
+}
+.menu-catalog__link {
+  font-family: "Open-Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  color: #333333;
+  text-decoration: none;
+}
+.menu-catalog__link--hover:hover {
+  text-decoration: underline;
+}
+.menu-catalog__images {
+  grid-area: images;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: 50px;
+}
+.menu-catalog__images-box {
+  width: 120px;
+  height: 120px;
+  background: #F2F3F5;
+  border: none;
+  border-radius: 12px;
+}
+
 /* =========NAVIGATION======== */
 .navigation--margin {
   margin-top: 10px;
@@ -541,7 +743,7 @@ body {
   display: none;
 }
 
-.bonus-system {
+.bonys-system {
   height: 100%;
   box-sizing: border-box;
   display: flex;
@@ -553,10 +755,10 @@ body {
   border-radius: 12px;
   background: linear-gradient(to right, #FF8C00, #FFBD00);
 }
-.bonus-system--padding {
+.bonys-system--padding {
   padding: 0px 50px;
 }
-.bonus-system__header {
+.bonys-system__header {
   font-family: "Open-Sans";
   font-size: 26px;
   font-weight: 700;
@@ -564,10 +766,10 @@ body {
   text-align: left;
   color: #FFFFFF;
 }
-.bonus-system__header--margin-bottom {
+.bonys-system__header--margin-bottom {
   margin-bottom: 15px;
 }
-.bonus-system__item {
+.bonys-system__item {
   font-family: "Open-Sans";
   font-size: 14px;
   font-weight: 600;
@@ -575,40 +777,34 @@ body {
   text-align: left;
   color: #FFFFFF;
 }
-
 .bonys-system__images {
   max-width: 145px;
   height: 146px;
   box-sizing: border-box;
   position: relative;
 }
-
-.bonus-systen__image-lightning {
+.bonys-system__image-lightning {
   height: 100%;
 }
-
-.bonus-systen__image-coin_1 {
+.bonys-system__image-coin_1 {
   position: absolute;
   top: 20px;
   right: -45px;
 }
-
-.bonus-systen__image-coin_2 {
+.bonys-system__image-coin_2 {
   position: absolute;
   right: 120px;
-  top: 60px;
+  top: 70px;
 }
-
-.bonus-systen__image-coin_3 {
+.bonys-system__image-coin_3 {
   position: absolute;
-  top: -60px;
+  top: -70px;
   right: 130px;
 }
-
-.bonus-systen__image-bonus {
+.bonys-system__image-bonus {
   position: absolute;
   top: 65px;
-  right: -45px;
+  right: -40px;
 }
 
 .guarantee {
@@ -1178,4 +1374,7 @@ body {
   line-height: 20px;
   text-align: left;
   color: #828282;
+}
+.copyrights__text-mobile {
+  display: none;
 }/*# sourceMappingURL=style_desctop.css.map */
